@@ -8,7 +8,7 @@ public class Marcador {
     private AtomicIntegerArray marcador = new AtomicIntegerArray(6);
     Random r = new Random();
 
-    public synchronized void increment(){
+    public void increment(){
         marcador.incrementAndGet(r.nextInt(6));
     }
 
